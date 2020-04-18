@@ -23,7 +23,7 @@ object Solution {
   }
 
   def parseHours(hour: Int): String = {
-    // this will cover 13, which cwe can have at between 12:31 - 12:59
+    // this will cover 13, which we can have at between 12:31 - 12:59
     val checkedNumber = if (hour > 12) hour - 12 else hour
     convertNumber(checkedNumber)
   }
